@@ -17,25 +17,12 @@ def hello():
 
 @app.route('/prediction')
 def prediction():
+    #query args
     variables = request.args.to_dict(flat=True)
     value_list=list(variables.values())
     input = [value_list]
-    # Reason = request.args.get('Reason')
-    # Season = request.args.get('Seasons')
-    # Distance = request.args.get('Distance')
-    # Age = request.args.get('Age')
-    # Workload = request.args.get('Workload')
-    # Hittarget = request.args.get('Hittarget')
-    # Disciplinary = request.args.get('Disciplinary')
-    # Education = request.args.get('Education')
-    # Son = request.args.get('Son')
-    # Drinker = request.args.get('Drinker')
-    # Smoker = request.args.get('Smoker')
-    # Pet = request.args.get('Pet')
-    # BMI = request.args.get('BMI')
 
-
-
+    #model
     data = pd.read_csv("data/Absenteeism_at_work.csv", sep = ';')
     data.drop(['ID'], axis = 1, inplace = True)
     data['absence'] = data['Absenteeism time in hours'] > 1
@@ -62,6 +49,7 @@ def prediction():
     clf.score(X_test, y_test)
     res = clf.predict(input) 
     
+    #conditionally render html
     if res[0]:
         return '''
             <h1>The employee is likely to be absent</h1>
@@ -78,6 +66,7 @@ def prediction():
 @app.route('/html')
 def html():
     """Returns some custom HTML"""
+    #front-end code
     return """
     <div style="position: absolute; right: 800px;">
     <h2>Code Book</h2><br>
