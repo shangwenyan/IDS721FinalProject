@@ -81,7 +81,7 @@ def html():
     return """
     <div style="position: absolute; right: 800px;">
     <h2>Code Book</h2><br>
-        <img src="https://github.com/shangwenyan/IDS721FinalProject/blob/main/images/Codebook.png?raw=true" ></img>
+        <img src="https://github.com/shangwenyan/IDS721FinalProject/blob/main/images/Codebook1.png?raw=true" ></img>
     </div>
     <form action="/prediction", method="GET">
         <h1>Enter Employee Information</h1><br>        
