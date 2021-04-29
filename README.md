@@ -31,7 +31,7 @@ Here is a demo about how the system works:
 Step 1: Clone this repository
 
 ```
-git clone https://github.com/yichenghuang980/emotion-detection.git
+git clone https://github.com/shangwenyan/IDS721FinalProject.git
 ```
 
 Step 2:Create virtual environment if none exists (optional) 
