@@ -22,9 +22,9 @@ The prediction panel is hosted on GCP flask and user can input their profile and
 
 ## Prediction Panel Demo
 
-link:
-
 Here is a demo about how the system works:
+
+[<img src="https://img.youtube.com/vi/5y9ESJxCXfY/maxresdefault.jpg" width="50%">](https://youtu.be/5y9ESJxCXfY)
 
 ## To recreate this project
 
