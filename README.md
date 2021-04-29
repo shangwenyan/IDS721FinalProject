@@ -25,3 +25,30 @@ The prediction panel is hosted on GCP flask and user can input their profile and
 link:
 
 Here is a demo about how the system works:
+
+## To recreate this project
+
+Step 1: Clone this repository
+
+```
+git clone https://github.com/yichenghuang980/emotion-detection.git
+```
+
+Step 2:Create virtual environment if none exists (optional) 
+
+```
+virtualenv --python $(which python3) venv
+source venv/bin/activate
+```
+
+Step 3: Install all the required packages 
+
+```
+pip install -r requirements.txt
+```
+
+Step 4: Run the following command to build a tmeporary testing website
+
+```
+python main.py
+```
