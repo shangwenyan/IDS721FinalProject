@@ -68,7 +68,7 @@ def html():
     """Returns some custom HTML"""
     #front-end code
     return """
-    <div style="position: absolute; right: 800px;">
+    <div style="float: right;">
     <h2>Code Book</h2><br>
         <img src="https://github.com/shangwenyan/IDS721FinalProject/blob/main/images/Codebook1.png?raw=true" ></img>
     </div>
